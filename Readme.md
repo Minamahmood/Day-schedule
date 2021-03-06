@@ -1,6 +1,6 @@
-# code-quiz ![MIT License](https://img.shields.io/badge/License-MIT-Green)
+# https://github.com/Minamahmood/Day-schedule
 
-![example](https://user-images.githubusercontent.com/56496370/109451953-83d1fe00-7a03-11eb-8a27-0dba9fcff7f3.gif)
+![example](https://user-images.githubusercontent.com/56496370/110220050-f9145780-7e77-11eb-8665-9041fd580904.gif)
 
 ## Description
 
@@ -39,8 +39,6 @@ GitHub: https://www.github.com/Minamahmood
 Email: minamahmood83@gmail.com
 
 ## Deployed
-
-https://minamahmood.github.io/Code-Quiz/
 
 ## License
 
