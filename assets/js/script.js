@@ -1,15 +1,21 @@
-$("#theDate").append(currentDate);
 var currentDate = moment().format("MM/DD/YYYY");
 
-var timeArr = ["9", "10", "11", "12", "1", "2", "3", "4", "5"];
+var timeArr = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
 
 function updatetime() {
     var currentTime = moment().format("H");
+    $("#theDate").append(currentDate);
+    console.log(currentTime);
     for (var i = 0; i < timeArr.length; i++) {
-        if (parseInt(timeArr[i]) > currentTime) {
-            $("#" + timeArr[i]).attr("style", "background-color:white");
+        if (parseInt(timeArr[i]) == currentTime) {
+            console.log("present", timeArr[i]);
+            $("#" + i).attr("style", "background-color:green");
+        } else if (parseInt(timeArr[i]) > currentTime) {
+            console.log("fututar", timeArr[i]);
+            $("#" + i).attr("style", "background-color:white");
         } else if (parseInt(timeArr[i]) < currentTime) {
-            $("#" + timeArr[i]).attr("style", "background-color:lightpink");
+            console.log("past", timeArr[i]);
+            $("#" + i).attr("style", "background-color:lightpink");
         }
     }
 }
